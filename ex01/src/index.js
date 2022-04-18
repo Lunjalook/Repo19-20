@@ -1,3 +1,4 @@
+
 var xy = '';
 var FcapsLock = '0';
 var Fshift = '0';
@@ -31,14 +32,20 @@ function funcShift() {
     }
 }
 //Enter
-function funcEnter() {
+function funcOk() {
     var valu = document.getElementById('display').innerHTML;
     if (valu == '') {
         alert('Not inserted : Empty innerHTML');
     } else {
-        alert('Data Inserted : ' + valu);
+        alert(valu);
     }
 }
+
+function funcEnter() {
+    var valu = document.getElementById('display').innerHTML;
+    document.getElementById('display').innerHTML = valu + "\n";
+}
+
 
 //Space
 function funcSpace() {

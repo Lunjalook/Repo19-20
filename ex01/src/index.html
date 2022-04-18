@@ -10,9 +10,12 @@
 
 <body>
     <h2>Virtual Keyboard</h2>
-    <textarea class="display" name="" id="display" cols="30" rows="10" placeholder="TEXT AREA"></textarea>
+    <div class="textArea">
+        <textarea class="display" name="" id="display" cols="30" rows="10" placeholder="TEXT AREA"></textarea>
+    </div>
     <div class="buttons">
-        <div class="row_1">
+
+        <div class="row">
             <button onclick="func1()" class="key">1</button>
             <button onclick="func2()" class="key">2</button>
             <button onclick="func3()" class="key">3</button>
@@ -26,7 +29,7 @@
             <button onclick="funcDel()" class="key BackSpace">Back Space</button>
         </div>
 
-        <div class="row_2">
+        <div class="row">
             <button onclick="funcq()" class="key">q</button>
             <button onclick="funcw()" class="key">w</button>
             <button onclick="funce()" class="key">e</button>
@@ -37,9 +40,10 @@
             <button onclick="funci()" class="key">i</button>
             <button onclick="funco()" class="key">o</button>
             <button onclick="funcp()" class="key">p</button>
+            <button onclick="funcCL()" class="CapsLock key">CapsLock</button>
         </div>
 
-        <div class="row_3">
+        <div class="row">
             <button onclick="funca()" class="key">a</button>
             <button onclick="funcs()" class="key">s</button>
             <button onclick="funcd()" class="key">d</button>
@@ -49,12 +53,12 @@
             <button onclick="funcj()" class="key">j</button>
             <button onclick="funck()" class="key">k</button>
             <button onclick="funcl()" class="key">l</button>
-            <button onclick="funcCL()" class="CapsLock key">CapsLock</button>
+            <button onclick="funcShift()" class="Shift key">Shift</button>
 
 
         </div>
 
-        <div class="row_4">
+        <div class="row">
             <button onclick="funcz()" class="key">z</button>
             <button onclick="funcx()" class="key">x</button>
             <button onclick="funcc()" class="key">c</button>
@@ -64,13 +68,15 @@
             <button onclick="funcm()" class="key">m</button>
             <button onclick="func_srednja()" class="key">-</button>
             <button onclick="func_donja()" class="key">_</button>
-            <button onclick="funcShift()" class="Shift key">Shift</button>
+            <button onclick="funcEnter()" class="Enter key">Enter</button>
+
         </div>
 
-        <div class="row_5">
+        <div class="row">
             <button onclick="funcSpace()" class="Space key">Space</button>
-            <button onclick="funcEnter()" class="enter key">OK</button>
+            <button onclick="funcOk()" class="Ok key">OK</button>
         </div>
+
     </div>
     </div>
     </div>
